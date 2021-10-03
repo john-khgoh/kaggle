@@ -5,9 +5,8 @@ import numpy as np
 from math import isnan
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.ensemble import GradientBoostingRegressor, VotingRegressor
 from sklearn.pipeline import Pipeline
-from sklearn.ensemble import VotingRegressor
 from sklearn.impute import KNNImputer
 from xgboost import XGBRegressor
 import warnings
