@@ -159,7 +159,7 @@ for _ in range(len_clone_df):
 	id = clone_id_list[_]
 	if(train_id_list.count(id)>0):
 		train_x_df.loc[train_x_df["Id"]==id] = clone_df.loc[clone_df["Id"]==id]
-	elif(test_id_list.count(clone_id_list[_])>0):
+	elif(test_id_list.count(id)>0):
 		test_df.loc[test_df["Id"]==id] = clone_df.loc[clone_df["Id"]==id]
 	else:
 		raise Exception
